@@ -82,17 +82,12 @@ O backend está implementado em FastAPI para realizar previsões em tempo real.
 
 ### Executar o servidor FastAPI:
 
-1. Acesse o diretório `app/`:
+1. Execute o servidor:
    ```bash
-   cd app
+   uvicorn main:app --reload
    ```
 
-2. Execute o servidor:
-   ```bash
-   uvicorn api:app --host 0.0.0.0 --port 8000
-   ```
-
-3. Acesse a documentação interativa:
+2. Acesse a documentação interativa:
    - [Swagger UI](http://127.0.0.1:8000/docs)
 
 ### Endpoints principais:
@@ -109,7 +104,7 @@ O frontend interativo permite carregar arquivos JSON ou inserir manualmente os d
 
 1. No diretório principal, execute:
    ```bash
-   streamlit run streamlit_app.py
+   streamlit run app.py
    ```
 
 2. Acesse no navegador:
